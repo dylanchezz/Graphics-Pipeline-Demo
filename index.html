@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Graphics Pipeline Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Interactive Graphics Pipeline Simulator</h1>
+        <p>Move your mouse to interact • Demonstrating App, Geometry, and Rasterization Stages</p>
+    </header>
+
+    <div id="canvas-container">
+        <canvas id="pipelineCanvas" width="800" height="500"></canvas>
+        <div class="controls-overlay">
+            <div class="pipeline-step"><span class="step-tag app-tag">STAGE 1</span> Application: Physics & Input Handling</div>
+            <div class="pipeline-step"><span class="step-tag geom-tag">STAGE 2</span> Geometry: 3D-to-2D Matrix Projection</div>
+            <div class="pipeline-step"><span class="step-tag rast-tag">STAGE 3</span> Rasterization: Pixel Generation & Depth Sorting</div>
+        </div>
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
